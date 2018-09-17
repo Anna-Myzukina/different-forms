@@ -1,0 +1,210 @@
+/*=============для форм==================*/
+*{
+	box-sizing: border-box;
+}
+input{
+	display: block;
+}
+/*=============стилизованный checkbox==================*/
+.slide_button {
+	width: 80px;
+	height: 26px;
+	background: #333;
+	border-radius: 50px;
+	position: relative;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+.slide_button:after {
+	content: 'OFF';
+	font: 12px/26px Arial, sans-serif;
+	color: #C30606;
+	position: absolute;
+	right: 10px;
+	z-index: 0;
+	font-weight: bold;
+}
+.slide_button:before {
+	content: 'ON';
+	font: 12px/26px Arial, sans-serif;
+	color: #00bf00;
+	position: absolute;
+	left: 10px;
+	z-index: 0;
+	font-weight: bold;
+}
+.slide_button label {
+	display: block;
+	width: 34px;
+	height: 20px;
+	border-radius: 50px;
+	transition: all .4s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 1;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: #fcfff4;
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+.slide_button input:checked + label {
+	left: 43px;
+}
+.slide_button input{
+	display: none;
+}
+/*=============end стилизованный checkbox==================*/
+/*=============обращение к placeholder==================*/
+input,textarea{
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	border: 1px solid #ccc;
+	outline: 0;
+}
+input:focus,textarea:focus{
+	border-color: #f00;
+}
+textarea{
+	width: 400px;
+	height: 200px;
+	resize: none;
+}
+
+::-webkit-input-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+::-moz-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+:-moz-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+:-ms-input-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+:focus::-webkit-input-placeholder{
+    color: transparent;
+    text-indent: 100px;
+}
+:focus::-moz-placeholder{
+    color: transparent;
+    text-indent: 100px;
+}
+:focus:-moz-placeholder{
+    color: transparent;
+    text-indent: 100px;
+}
+:focus:-ms-input-placeholder{
+    color: transparent;
+    text-indent: 100px;
+}
+/*=============end обращение к placeholder==================*/
+
+.input{
+	position: relative;
+	display: inline-block;
+	margin: 100px 400px;
+}
+.input:before{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+}
+.input>input{
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	border: 2px solid green!important;
+	background: #ccc;
+}
+
+
+
+.form1{
+	margin: 200px auto;
+	width: 500px;
+	min-height: 500px;
+	border-radius: 50px;
+	border: 5px solid #000;
+	background: #ccc;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.form1 input{
+	width: 100%;
+	display: block;
+	height: 50px;
+	border-radius: 5px;
+	border: 2px solid #000;
+	color: #333;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+.form1 label{
+	width: 100%;
+	display: block;
+}
+/*=============обращение к placeholder==================*/
+.form1 ::-webkit-input-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+}
+.form1 ::-moz-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+}
+.form1 :-moz-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+}
+.form1 :-ms-input-placeholder{
+    color: red;
+	transition: all .3s ease;
+	font-family: sans-serif;
+}
+
+.form1 :focus::-webkit-input-placeholder{
+    color: transparent;
+    text-indent: 250px;
+}
+.form1 :focus::-moz-placeholder{
+    color: transparent;
+    text-indent: 250px;
+}
+.form1 :focus:-moz-placeholder{
+    color: transparent;
+    text-indent: 250px;
+}
+.form1 :focus:-ms-input-placeholder{
+    color: transparent;
+    text-indent: 250px;
+}
+/*=============end обращение к placeholder==================*/

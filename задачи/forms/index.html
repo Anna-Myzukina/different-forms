@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css">
+	<script src="https://use.fontawesome.com/6bb3a83356.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Forms</title>
+</head>
+
+<body>
+	<form action="" method="POST" name="form1">
+		<fieldset>
+			<legend>Please enter:</legend>
+			<input name="login" type="text" value="" required pattern="[A-Za-z0-9]{4,12}" title="Введите англ буквы больш мален и цифры от 0-9">
+			<input name="password" type="password" placeholder="Введите пароль" required>
+			<input name="email" type="email" required>
+			<input type="tel" pattern="\+3\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+			
+		</fieldset>
+
+		<input type="checkbox">
+		<input id="check1" type="checkbox">
+		<label for="check1">Something 1</label>
+		<label>
+			<input type="checkbox"> Something 2
+		</label>
+		<input name="select" type="radio">
+		<input name="select" type="radio">
+		<input type="color">
+		<input type="date">
+		<input type="month">
+		<input type="time">
+		<input type="email" required>
+		<input type="file" accept=".jpg">
+		<input type="button" value="Button-input">
+		<button type="button">Button</button>
+		<input type="number" min="100" max="110" step="0.1">
+		<input type="range" min="0" max="100" value="33" step="1">
+		<input type="search">
+		<input type="reset" value="Очистить">
+		<input type="submit" value="Регистрация">
+		<input type="hidden">
+		<textarea name="comment" placeholder="Please write something..."></textarea>
+
+		<select name="choose">
+			<option>Variant1</option>
+			<option>Variant2</option>
+			<option>Variant3</option>
+		</select>
+
+		<div class="slide_button">
+			<input type="checkbox" id="on_off">
+			<label for="on_off"></label>
+		</div>
+
+		<label class="input fa fa-user-circle-o" aria-hidden="true">
+			<input type="text" placeholder="Name" style="border: 2px dotted red;">
+		</label>
+	</form>
+	<div class="art">
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam doloribus ducimus suscipit totam deleniti quibusdam laudantium ipsam nobis incidunt obcaecati tenetur debitis et, nesciunt corrupti ea cumque, odit possimus repudiandae voluptates facere eos soluta excepturi maiores quae. Doloremque quae obcaecati nemo voluptates dicta in consequatur beatae error possimus aliquam reprehenderit, debitis corporis nostrum saepe!</p>
+		<p contenteditable>Voluptas officiis at aliquam rem quidem ex aspernatur illo, vel ad vitae assumenda pariatur, fugit amet cupiditate minus eveniet, iure asperiores. Dignissimos natus ipsa nemo, nobis iusto dolor, assumenda maiores voluptate incidunt, laborum aperiam autem sit pariatur unde. Aspernatur excepturi libero, deleniti cumque ut iste necessitatibus. Facilis dolorum asperiores laborum officiis ducimus saepe rerum quidem odio commodi, praesentium ipsum distinctio, alias iste ipsa repellendus, sint impedit aliquid veniam laboriosam nostrum. Aut architecto dolorem rerum minima obcaecati, sit modi corrupti eaque deleniti dicta adipisci illum enim, reprehenderit veniam tenetur voluptate?</p>
+		<p>
+			Laborum ipsam distinctio a corporis odio sapiente. Modi eos perferendis perspiciatis praesentium, alias saepe beatae. Praesentium asperiores quisquam magnam quos libero maxime debitis hic, deleniti unde aspernatur eveniet reiciendis animi amet cupiditate quasi laborum sunt, inventore ducimus? Autem doloribus nobis dolor blanditiis cum, iusto porro quidem iste dolorum sit vel harum libero, molestias quae impedit deleniti sapiente!
+		</p>
+	</div>
+</body>
+
+</html>
